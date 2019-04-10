@@ -4,7 +4,7 @@ Date | Progress | Problem
 04/10/2019 | Wiring. The tag reader is able to read a tag when the tag is getting close to the reader. | The reader cannot identify different tags.
 
 
-# Wiring Diagram
+# Wiring
 Arduino | RFID Reader ID-12 
 ----------- | --------- 
 5V | VCC (PIN 11)
