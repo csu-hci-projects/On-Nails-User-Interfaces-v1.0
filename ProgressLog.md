@@ -6,10 +6,26 @@ Date | Progress | Problem
 04/13/2019 | Be able to turn up/turn down/mute PC volume thru different RFID tags (via USB). Trouble shooting: If the serial monitor is open then VB cannot use the COM port. | To do: wireless (soldering needed).
 
 
-# Wiring
+# Wiring (USB)
 Arduino | RFID Reader ID-12 
 ----------- | --------- 
 5V | VCC (PIN 11)
 GND |  GND (PIN 1), FORM (Format Selector, PIN 7) 
 RX | D0 (Data 0, PIN 9)
 D10 (OUTPUT -> HIGH) | RES (Reset, PIN 2)            
+
+
+# Wiring (Wireless via Bluetooth)
+Arduino | RFID Reader ID-12 
+----------- | --------- 
+5V | VCC (PIN 11)
+GND |  GND (PIN 1), FORM (Format Selector, PIN 7) 
+RX | D0 (Data 0, PIN 9)
+D10 (OUTPUT -> HIGH) | RES (Reset, PIN 2)    
+
+Arduino | Bluetooth HC-06
+----------- | --------- 
+5V | VCC 
+GND |  GND
+-- | TX
+TX | RX
