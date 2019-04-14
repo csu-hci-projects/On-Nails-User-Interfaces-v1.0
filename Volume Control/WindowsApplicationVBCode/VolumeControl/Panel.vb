@@ -11,7 +11,7 @@ Public Class VolumeControl
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SerialPort1.Close()
-        SerialPort1.PortName = "com4"
+        SerialPort1.PortName = "com6"
         SerialPort1.BaudRate = 9600
         SerialPort1.DataBits = 8
         SerialPort1.Encoding = System.Text.Encoding.Default
