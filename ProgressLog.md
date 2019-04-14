@@ -5,6 +5,7 @@ Date | Progress | Problem
 04/11/2019 | Be able to identify different tags by unpluging RX before uploading the sketch and use different tags to implement different functions. | To do: figure out how to use Arduino to control external device.
 04/13/2019 | Be able to turn up/turn down/mute PC volume thru different RFID tags (via USB). Trouble shooting: If the serial monitor is open then VB cannot use the COM port. | To do: wireless (soldering needed).
 04/14/2019 | Enable Wireless Control. (Remember to unplug RX before uploading sketch.) | To do: encapsulation and beautification. figure out how to increment and decrement the volume by certain amount.
+04/15/2019 | Enable specified amount of increase and decrease. | To do: 2mm pin is too short for a female jumper, it easily gets disconnected. 
 
 # Wiring (USB)
 Arduino | RFID Reader ID-12 
