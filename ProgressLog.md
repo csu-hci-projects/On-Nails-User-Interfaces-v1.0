@@ -6,6 +6,8 @@ Date | Progress | Problem
 04/13/2019 | Be able to turn up/turn down/mute PC volume thru different RFID tags (via USB). Trouble shooting: If the serial monitor is open then VB cannot use the COM port. | To do: wireless (soldering needed).
 04/14/2019 | Enable Wireless Control. (Remember to unplug RX before uploading sketch.) | To do: encapsulation and beautification. figure out how to increment and decrement the volume by certain amount.
 04/15/2019 | Enable specified amount of increase and decrease. | To do: 2mm pin is too short for a female jumper, it easily gets disconnected. 
+05/02/2019 | Enable play and stop audio. | To do: allow songs switching. 
+05/04/2019 | Enable switch songs. | To do: Paint fake nails.
 
 # Wiring (USB)
 Arduino | RFID Reader ID-12 
