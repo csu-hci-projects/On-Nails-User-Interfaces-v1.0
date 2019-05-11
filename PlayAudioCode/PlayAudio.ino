@@ -41,21 +41,18 @@ void loop()
     byte tag_down[10] = {0x0, 0x0, 0x7, 0x8, 0x4, 0xA, 0x1, 0x6, 0x0, 0x6};
     byte tag_mute[10] = {0x0, 0x0, 0x7, 0x8, 0x4, 0xA, 0x1, 0x5, 0xF, 0xA};
     byte tag_play[10] = {0x0, 0x0, 0x7, 0x8, 0x4, 0xA, 0x1, 0x6, 0x4, 0x9};
-    byte tag_stop[10] = {0x0, 0x0, 0x7, 0x8, 0x4, 0xA, 0x1, 0x6, 0x8, 0x0};
-    byte tag_switch[10] = {0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0xF, 0x7};
+    byte tag_switch[10] = {0x0, 0x0, 0x7, 0x8, 0x4, 0xA, 0x1, 0x6, 0x8, 0x0};
 
     if (memcmp(tagID, tag_up, 10) == 0) {
-      Serial.println("U");
+      Serial.println("U"); // turn up
     } else if (memcmp(tagID, tag_down, 10) == 0) {
-      Serial.println("D");
+      Serial.println("D"); // turn down
     } else if (memcmp(tagID, tag_mute, 10) == 0) {
-      Serial.println("M");
+      Serial.println("M"); // mute
     } else if (memcmp(tagID, tag_play, 10) == 0) {
-      Serial.println("P");
-    } else if (memcmp(tagID, tag_stop, 10) == 0) {
-      Serial.println("S");
+      Serial.println("P"); // play + stop
     } else if (memcmp(tagID, tag_switch, 10) == 0) {
-      Serial.println("Q");
+      Serial.println("S"); // next song
     }
     
     clear_tag();
