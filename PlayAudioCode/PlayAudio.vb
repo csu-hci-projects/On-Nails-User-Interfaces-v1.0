@@ -1,6 +1,6 @@
 Imports System.Runtime.InteropServices
 
-Public Class VolumeControl
+Public Class PlayAudio
     <DllImport("user32.dll", SetLastError:=True, CharSet:=CharSet.Auto)> Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal Msg As UInteger, ByVal wParam As IntPtr, ByVal lParam As IntPtr) As IntPtr
     End Function
 
