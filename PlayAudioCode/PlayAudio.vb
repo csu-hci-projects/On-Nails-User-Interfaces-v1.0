@@ -71,8 +71,6 @@ Public Class PlayAudio
                 Label1.Text = "Music stop"
             End If
 
-            'End If
-
             playOrStop = playOrStop + 1
 
         End If
