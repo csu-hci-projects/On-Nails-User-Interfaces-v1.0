@@ -1,6 +1,6 @@
-﻿Imports System.Runtime.InteropServices
+Imports System.Runtime.InteropServices
 
-Public Class PlayAudio
+Public Class VolumeControl
     <DllImport("user32.dll", SetLastError:=True, CharSet:=CharSet.Auto)> Private Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal Msg As UInteger, ByVal wParam As IntPtr, ByVal lParam As IntPtr) As IntPtr
     End Function
 
@@ -11,7 +11,7 @@ Public Class PlayAudio
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         SerialPort1.Close()
-        SerialPort1.PortName = "com4"
+        SerialPort1.PortName = "com4" 'USB COM
         SerialPort1.BaudRate = 9600
         SerialPort1.DataBits = 8
         SerialPort1.Encoding = System.Text.Encoding.Default
@@ -24,8 +24,9 @@ Public Class PlayAudio
         Dim his As Char = SerialPort1.ReadExisting()
         Dim i, j As Integer
         Dim songs() As String = {"D:\Coldplay - Yellow.wav", "D:\Coldplay - Viva La Vida.wav",
-            "D:\Linkin Park - Numb.wav", "D:\BLACKPINK - DDU-DU DDU-DU.wav", "D:\JENNIE - SOLO.wav"}
+          "D:\Linkin Park - Numb.wav"}
         Static songIndex As Integer = 0
+        Static playOrStop As Integer = 0
 
         If his = "D" Then 'turn down the volume
             Try
@@ -55,28 +56,32 @@ Public Class PlayAudio
                 Label1.Text = "Mute"
             Catch ex As Exception
             End Try
-
         End If
 
-        If his = "P" Then 'play music
+        If his = "P" Then 'play music, stop music alternatively
 
-            My.Computer.Audio.Play("D:\Coldplay - Yellow.wav",
+            playOrStop = playOrStop Mod 2
+
+            If playOrStop = 0 Then
+                My.Computer.Audio.Play("D:\Coldplay - Yellow.wav",
                 AudioPlayMode.BackgroundLoop)
-            Label1.Text = "Music: " + "D:\Coldplay - Yellow.wav"
+                Label1.Text = "Music: " + "D:\Coldplay - Yellow.wav"
+            Else
+                My.Computer.Audio.Stop()
+                Label1.Text = "Music stop"
+            End If
+
+            'End If
+
+            playOrStop = playOrStop + 1
 
         End If
 
-        If his = "S" Then 'stop
 
-            My.Computer.Audio.Stop()
-            Label1.Text = "Music stop"
-
-        End If
-
-        If his = "Q" Then 'switch songs
+        If his = "S" Then 'switch songs
 
             songIndex = songIndex + 1
-            songIndex = songIndex Mod 5
+            songIndex = songIndex Mod 3
             My.Computer.Audio.Play(songs(songIndex), AudioPlayMode.BackgroundLoop)
             Label1.Text = "Switch to: " + songs(songIndex)
 
