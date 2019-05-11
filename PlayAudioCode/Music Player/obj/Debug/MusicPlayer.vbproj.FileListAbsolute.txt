@@ -1,0 +1,12 @@
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\bin\Debug\VolumeControlApp.exe.config
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\bin\Debug\VolumeControlApp.exe
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\bin\Debug\VolumeControlApp.pdb
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\bin\Debug\VolumeControlApp.xml
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\WindowsApplication.MusicPlayer.resources
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\WindowsApplication.Resources.resources
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\MusicPlayer.vbproj.GenerateResource.cache
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\MusicPlayer.vbproj.CoreCompileInputs.cache
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\VolumeControlApp.exe
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\VolumeControlApp.xml
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\VolumeControlApp.pdb
+D:\On-Nails-User-Interfaces-v1.0-master\Volume Control\WindowsApplicationVBCode\VolumeControl\obj\Debug\MusicPlayer.vbprojAssemblyReference.cache
